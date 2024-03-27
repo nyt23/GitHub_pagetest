@@ -10,7 +10,8 @@ document.getElementById('inspirationButton').addEventListener('click', function(
         console.error('Error fetching quote: ', error);
         document.getElementById('quoteDisplay').innerText = 'Failed to fetch quote. Please try again';
     })
-
+    const replaceText = "Great! You've got your today's quote! Come back tomorrow!"
+    document.getElementById('inspirationButton').replaceWith(replaceText);
 });
 
 
